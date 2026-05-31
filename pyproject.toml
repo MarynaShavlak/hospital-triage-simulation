@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triage-sim"
+version = "1.0.0"
+description = "Симуляція приймального відділення лікарні: FIFO vs Priority vs Aging на двійковій купі"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["simulation", "queueing-theory", "priority-queue", "heap", "healthcare", "triage"]
+dependencies = [
+    "numpy>=1.23",
+    "matplotlib>=3.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.5", "mypy>=1.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# PEP 561: позначає пакет як типізований, щоб mypy/pyright у СПОЖИВАЧІВ
+# підхоплювали наші інлайн-анотації (інакше їх ігнорують).
+[tool.setuptools.package-data]
+triage_sim = ["py.typed"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "scripts"]   # "scripts" — щоб смоук-тест бачив пакет figbuild
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["notebooks"]   # оригінальний дослідницький ноутбук лінтингу не підлягає
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["triage_sim"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true   # numpy / matplotlib постачаються без type-стабів
+check_untyped_defs = true       # перевіряти тіла й нетипізованих функцій

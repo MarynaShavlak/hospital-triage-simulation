@@ -1,0 +1,7 @@
+# Залежності визначені в pyproject.toml (ЄДИНЕ джерело правди).
+# Цей файл лишено для звички `pip install -r requirements.txt`: він ставить сам
+# пакет, а той підтягує numpy/matplotlib з pyproject (тож нічого не дублюється).
+#
+#   pip install -r requirements.txt     # рантайм
+#   pip install -e ".[dev]"             # + pytest / ruff / mypy
+-e .
