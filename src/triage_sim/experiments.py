@@ -93,7 +93,7 @@ def load_sweep(
     keys = ["rho", "fifo_L1", "prio_L1", "aging_L1", "prio_L5max", "speedup"]
     data: dict[str, list] = {k: [] for k in keys}
     for rho in rho_values:
-        arrival_rate = rho / avg_service          # підбираємо частоту під потрібне ρ
+        arrival_rate = float(rho / avg_service)   # підбираємо частоту під потрібне ρ
         fifo_l1, prio_l1, aging_l1, prio_l5max = [], [], [], []
         for seed in range(seeds_per_rho):
             pts = generate_patients(n=n, arrival_rate=arrival_rate, seed=seed)
