@@ -33,7 +33,6 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 120
 target-version = "py310"
-extend-exclude = ["notebooks"]   # оригінальний дослідницький ноутбук лінтингу не підлягає
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]

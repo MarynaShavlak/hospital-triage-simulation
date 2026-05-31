@@ -1,5 +1,0 @@
-# Мовна статистика GitHub (Linguist)
-# Ноутбук роздутий вбудованими картинками-аутпутами (~1.2 МБ),
-# тому виключаємо його зі статистики, щоб домінував реальний Python-код.
-notebooks/triage-research.ipynb linguist-documentation
-*.ipynb linguist-detectable=false
