@@ -17,7 +17,7 @@
 | 4 | Запуск трьох сценаріїв (FIFO / Priority / Aging) |
 | 5 | Метрики та аналіз |
 | 6-7 | Візуалізація (графіки 1-5) |
-| 8.5 | Валідація рушія теорією черг (M/G/1, M/M/c) |
+| 8 | Валідація рушія теорією черг (M/G/1, M/M/c) |
 | 9 | Монте-Карло (надійність чисел) |
 | 10 | Чутливість до навантаження ρ |
 | 11 | Метрика шкоди (CTAS-пороги) |
@@ -49,7 +49,7 @@
 - `FifoDequePolicy` — FIFO на `deque` за O(1) (доказ «дисципліна ≠ структура»).
 - `discipline_sort_key(discipline, aging_threshold)` — динамічний ключ списку (`priority`/`fifo`/`aging`) для драйвера з вибуттям.
 
-### `engines/__init__.py` — публічні рушії · **Фаза 3-4**, **8.5**
+### `engines/__init__.py` — публічні рушії · **Фаза 3-4**, **8**
 - `simulate(patients, discipline)` — один лікар, `fifo`/`priority` (головний рушій).
 - `simulate_fifo_deque(patients)` — FIFO на deque (та сама дисципліна, інша структура).
 - `simulate_md(patients, discipline, n_doctors)` — `c` лікарів (M/M/c); валідується Erlang-C.
@@ -71,7 +71,7 @@
 - `metrics_by_severity(served)` — `avg`/`max`/`count` очікування за рівнями (основа всіх таблиць і графіків). **Фаза 5**.
 - `count_in_danger(served, danger)` + `DANGER` — скільки перевищили клінічний поріг (CTAS) — метрика шкоди. **Фаза 11**.
 
-### `validation.py` — звірка рушія з теорією черг · **Фаза 8.5**
+### `validation.py` — звірка рушія з теорією черг · **Фаза 8**
 - `service_moments` — 1-й/2-й моменти часу обслуговування (зі спільних семплерів).
 - `validate_mg1` — FIFO vs формула Pollaczek–Khinchine (M/G/1).
 - `erlang_c` / `mmc_wq` — точний розв'язок M/M/c.
@@ -114,7 +114,7 @@
 - **`run_main_comparison.py`** `main` — головна таблиця FIFO/Priority/Aging (seed=42) + звірка «дисципліна ≠ структура». **Фази 4-6**.
 - **`run_monte_carlo.py`** `main`(+`summary`) — друк `monte_carlo`. **Фаза 9**.
 - **`run_load_sweep.py`** `main` — друк `load_sweep`. **Фаза 10**.
-- **`run_validation.py`** `main` — друк `validate_mg1`/`validate_mmc`. **Фаза 8.5**.
+- **`run_validation.py`** `main` — друк `validate_mg1`/`validate_mmc`. **Фаза 8**.
 - **`run_reneging.py`** `main` — друк `reneging_stats` + `reneging_valve`. **Фаза 12**.
 - **`run_deterioration.py`** `print_naive`/`print_realistic`/`print_sensitivity`/`main` — друк `deterioration_stats` + `deterioration_sensitivity`. **Фаза 13**.
 - **`save_figures.py`** `main` — CLI: будує всі 23 графіки у `figures/` (`--only`, `--runs`, `--out`).
@@ -139,7 +139,7 @@
 
 ## ✅ Тести `tests/`
 
-- **`test_equivalence.py`** (14) — біт-у-біт еквівалентність усіх реалізацій рушія + поведінкові гарантії (aging обмежує L5, `SAFETY_FLOOR`) + валідація теорії черг. **Фази 3, 5, 8.5**.
+- **`test_equivalence.py`** (14) — біт-у-біт еквівалентність усіх реалізацій рушія + поведінкові гарантії (aging обмежує L5, `SAFETY_FLOOR`) + валідація теорії черг. **Фази 3, 5, 8**.
 - **`test_departures.py`** (6) — інваріанти моделей вибуття (збереження пацієнтів, L1 не йде, монотонність тяжкості). **Фази 12-13**.
 - **`test_metrics.py`** (3) — `metrics_by_severity` + `count_in_danger` (строга межа порога). **Фази 5, 11**.
 - **`test_experiments.py`** (7) — контракти спільних експериментів. **Фази 9-13**.
