@@ -30,6 +30,8 @@
 import heapq, math
 from matplotlib import pyplot as plt
 
+SEV_COLORS = {1: "#d32f2f", 2: "#f57c00", 3: "#fbc02d", 4: "#7cb342", 5: "#43a047"}
+
 def draw_heap(ax, arr, title, highlight=None, swap=None):
     """Малює купу (масив пар (severity, id)) як бінарне дерево."""
     n = len(arr); pos = {}

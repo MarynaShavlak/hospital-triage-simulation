@@ -140,9 +140,6 @@ else:
 Побудуємо обидва потоки поряд, щоб побачити різницю 👇
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
-
 arrival_rate = 0.075
 rng = np.random.default_rng(42)
 inter_arrivals = rng.exponential(1 / arrival_rate, size=180)
@@ -407,8 +404,6 @@ max(2, ...)
 Але вони складніші для розуміння. Для нашого досліду нормальний розподіл + захисний мінімум — достатньо хороше й просте наближення, яке не спотворює висновки.
 
 ```python
-import numpy as np
-
 rng = np.random.default_rng(42)
 base = {1: 25, 2: 18, 3: 12, 4: 8, 5: 5}
 

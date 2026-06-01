@@ -150,12 +150,6 @@ L5 Нетерміновий        163       703     246
 
 ### Три обчислення
 
-```python
-metrics_fifo = metrics_by_severity(fifo_result)
-metrics_priority = metrics_by_severity(prio_result)
-metrics_aging = metrics_by_severity(aging_result)
-```
-
 Викликаємо функцію тричі — для кожного сценарію. Тепер маємо три словники зі статистикою. Доступ до конкретного числа читається ланцюжком:
 
 ```
@@ -195,13 +189,7 @@ print(f"   Priority: {metrics_priority[1]['max']:.0f} хвилин")
    Priority: 15 хвилин
 ```
 
-### Головний результат
-
-```python
-print(f"   FIFO:     {metrics_fifo[1]['avg']:.0f} хвилин")
-print(f"   Priority: {metrics_priority[1]['avg']:.0f} хвилин")
-print(f"   → у {metrics_fifo[1]['avg'] / metrics_priority[1]['avg']:.0f} рази швидше!")
-```
+### Звідки взялися «11×» і «майже 2 години»
 
 Витягуємо головну цифру дослідження — порівняння критичних (L1):
 - `mf[1]['avg']` = 80 (FIFO)
