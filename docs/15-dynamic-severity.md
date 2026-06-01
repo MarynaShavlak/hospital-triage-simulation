@@ -263,11 +263,6 @@ plt.tight_layout(); plt.show()
 
 **Результат:**
 
-```
-<Figure size 1650x605 with 2 Axes>
-```
-
-
 ![deterioration mortality](../figures/23_deterioration_mortality.png)
 
 ### Розбір підсумкового графіка погіршення

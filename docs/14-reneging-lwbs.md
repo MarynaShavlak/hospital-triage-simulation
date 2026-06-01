@@ -399,11 +399,6 @@ plt.tight_layout(); plt.show()
 
 **Результат:**
 
-```
-<Figure size 1650x605 with 2 Axes>
-```
-
-
 ![reneging lwbs](../figures/22_reneging_lwbs.png)
 
 ### Розбір графіка LWBS

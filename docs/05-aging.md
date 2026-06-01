@@ -91,7 +91,6 @@ plt.show()
         90 хв             3.0            L3
        135 хв             2.0            L2
        180 хв             1.0            L1
-<Figure size 1210x660 with 1 Axes>
 ```
 
 
@@ -283,7 +282,6 @@ plt.show()
      60       13      274
      90        5      306
     120        7      379
-<Figure size 1210x660 with 2 Axes>
 ```
 
 

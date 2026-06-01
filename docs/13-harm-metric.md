@@ -147,11 +147,6 @@ plt.show()
 
 **Результат:**
 
-```
-<Figure size 990x605 with 1 Axes>
-```
-
-
 ![harm threshold sensitivity](../figures/20_harm_threshold_sensitivity.png)
 
 ### Чому це знімає питання "а ви не підібрали пороги?"
@@ -248,11 +243,6 @@ plt.show()
 
 
 **Результат:**
-
-```
-<Figure size 1650x605 with 2 Axes>
-```
-
 
 ![harm by discipline](../figures/21_harm_by_discipline.png)
 

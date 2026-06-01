@@ -184,11 +184,6 @@ plt.show()
 
 **Результат:**
 
-```
-<Figure size 1430x495 with 2 Axes>
-```
-
-
 ![arrivals poisson vs metronome](../figures/01_arrivals_poisson_vs_metronome.png)
 
 ### Реалізація рядок за рядком
@@ -286,11 +281,6 @@ plt.show()
 
 
 **Результат:**
-
-```
-<Figure size 1210x550 with 1 Axes>
-```
-
 
 ![interarrival exponential](../figures/02_interarrival_exponential.png)
 
@@ -473,11 +463,6 @@ plt.show()
 
 
 **Результат:**
-
-```
-<Figure size 1430x440 with 2 Axes>
-```
-
 
 ![severity and arrivals](../figures/03_severity_and_arrivals.png)
 

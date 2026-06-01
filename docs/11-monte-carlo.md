@@ -205,11 +205,6 @@ plt.show()
 
 **Результат:**
 
-```
-<Figure size 1760x605 with 3 Axes>
-```
-
-
 ![montecarlo boxplots](../figures/17_montecarlo_boxplots.png)
 
 ### Як читати ці графіки
@@ -407,11 +402,6 @@ plt.show()
 
 
 **Результат:**
-
-```
-<Figure size 1760x550 with 3 Axes>
-```
-
 
 ![seed42 vs montecarlo](../figures/18_seed42_vs_montecarlo.png)
 

@@ -164,11 +164,6 @@ plt.show()
 
 **Результат:**
 
-```
-<Figure size 1870x583 with 3 Axes>
-```
-
-
 ![load sweep](../figures/19_load_sweep.png)
 
 ### Розбір графіків чутливості до навантаження

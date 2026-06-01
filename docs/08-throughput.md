@@ -142,11 +142,6 @@ plt.tight_layout(); plt.show()
 
 **Результат:**
 
-```
-<Figure size 1540x605 with 3 Axes>
-```
-
-
 ![graph5 throughput](../figures/14_graph5_throughput.png)
 
 ### Результат 2 (несподіваний): сумарне очікування НЕ зберігається

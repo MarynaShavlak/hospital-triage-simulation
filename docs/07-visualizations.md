@@ -36,11 +36,6 @@ plt.show()
 
 **Результат:**
 
-```
-<Figure size 1210x660 with 1 Axes>
-```
-
-
 ![graph1 avg wait by severity](../figures/09_graph1_avg_wait_by_severity.png)
 
 **Що видно:** під **Priority** критичні (L1) обслуговуються майже миттєво, але легкі (L5) чекають набагато довше — це ціна. **Aging** згладжує крайнощі: критичні все ще швидко, а легкі не страждають так сильно.
@@ -133,11 +128,6 @@ plt.show()
 
 
 **Результат:**
-
-```
-<Figure size 1650x770 with 2 Axes>
-```
-
 
 ![graph2 timeline](../figures/10_graph2_timeline.png)
 
@@ -270,11 +260,6 @@ plt.show()
 
 **Результат:**
 
-```
-<Figure size 1650x770 with 2 Axes>
-```
-
-
 ![graph2 timeline starving](../figures/11_graph2_timeline_starving.png)
 
 ### Підсумок Графіка 2
@@ -318,11 +303,6 @@ plt.show()
 
 
 **Результат:**
-
-```
-<Figure size 1210x660 with 1 Axes>
-```
-
 
 ![graph3 starvation max](../figures/12_graph3_starvation_max.png)
 
@@ -480,11 +460,6 @@ plt.show()
 
 
 **Результат:**
-
-```
-<Figure size 2090x550 with 5 Axes>
-```
-
 
 ![graph4 violin distributions](../figures/13_graph4_violin_distributions.png)
 

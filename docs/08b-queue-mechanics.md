@@ -101,11 +101,6 @@ plt.show()
 
 **Результат:**
 
-```
-<Figure size 1430x990 with 4 Axes>
-```
-
-
 ![one queue three orders](../figures/15_one_queue_three_orders.png)
 
 ### Що видно на цьому графіку
@@ -182,11 +177,6 @@ plt.show()
 
 
 **Результат:**
-
-```
-<Figure size 1430x825 with 5 Axes>
-```
-
 
 ![priority push pop trace](../figures/16_priority_push_pop_trace.png)
 

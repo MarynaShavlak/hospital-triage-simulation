@@ -69,11 +69,6 @@ plt.tight_layout(); plt.show()
 
 **Результат:**
 
-```
-<Figure size 880x550 with 1 Axes>
-```
-
-
 ![heap tree](../figures/04_heap_tree.png)
 
 ### Як читати це дерево
@@ -125,11 +120,6 @@ plt.tight_layout(); plt.show()
 
 **Результат:**
 
-```
-<Figure size 1815x462 with 3 Axes>
-```
-
-
 ![heap sift up](../figures/05_heap_sift_up.png)
 
 ### POP: останній елемент "тоне" вниз (sift-down)
@@ -172,11 +162,6 @@ plt.tight_layout(); plt.show()
 
 
 **Результат:**
-
-```
-<Figure size 1815x462 with 3 Axes>
-```
-
 
 ![heap sift down](../figures/06_heap_sift_down.png)
 
