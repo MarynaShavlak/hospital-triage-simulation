@@ -1,8 +1,8 @@
 # Фаза 11. Метрика шкоди: від хвилин до життів
 
-> Розділ 13 · [↑ Зміст документації](README.md) · [↑ Головний README](../README.md)
+> Розділ 12 · [↑ Зміст документації](README.md) · [↑ Головний README](../README.md)
 
-[← Фаза 10. Чутливість до навантаження (sweep ρ)](12-load-sensitivity.md)    [Фаза 12. Reneging: пацієнти йдуть, не дочекавшись (LWBS) →](14-reneging-lwbs.md)
+[← Фаза 10. Чутливість до навантаження (sweep ρ)](11-load-sensitivity.md)    [Фаза 12. Reneging: пацієнти йдуть, не дочекавшись (LWBS) →](13-reneging-lwbs.md)
 
 ---
 
@@ -306,4 +306,4 @@ Priority/Aging — навпаки: захищають тяжких, але ст�
 
 ---
 
-[← Фаза 10. Чутливість до навантаження (sweep ρ)](12-load-sensitivity.md)    [Фаза 12. Reneging: пацієнти йдуть, не дочекавшись (LWBS) →](14-reneging-lwbs.md)
+[← Фаза 10. Чутливість до навантаження (sweep ρ)](11-load-sensitivity.md)    [Фаза 12. Reneging: пацієнти йдуть, не дочекавшись (LWBS) →](13-reneging-lwbs.md)

@@ -2,7 +2,7 @@
 
 > Розділ 09 · [↑ Зміст документації](README.md) · [↑ Головний README](../README.md)
 
-[← Механіка черги (push/pop, deque)](08b-queue-mechanics.md)    [Фаза 9. Монте-Карло: наскільки надійні числа →](11-monte-carlo.md)
+[← Механіка черги (push/pop, deque)](08b-queue-mechanics.md)    [Фаза 9. Монте-Карло: наскільки надійні числа →](10-monte-carlo.md)
 
 ---
 
@@ -176,4 +176,4 @@ for c, rho in [(2, 0.85), (3, 0.80)]:
 
 ---
 
-[← Механіка черги (push/pop, deque)](08b-queue-mechanics.md)    [Фаза 9. Монте-Карло: наскільки надійні числа →](11-monte-carlo.md)
+[← Механіка черги (push/pop, deque)](08b-queue-mechanics.md)    [Фаза 9. Монте-Карло: наскільки надійні числа →](10-monte-carlo.md)

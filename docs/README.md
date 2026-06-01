@@ -16,7 +16,7 @@
 ## Як читати
 
 Розділи впорядковані як наратив — від простого до складного. Найкоротший шлях до
-суті: **00 → 06 → 07 → 13 → 15**. Повний шлях — підряд від 00 до 15.
+суті: **00 → 06 → 07 → 12 → 14**. Повний шлях — підряд від 00 до 14.
 
 ## Розділи
 
@@ -34,11 +34,11 @@
 | 08 | [Висновки і пропускна здатність](08-throughput.md) | Підсумки Фази 7; Графік 5 — чому порядок не міняє throughput |
 | 08b | [Механіка черги (push/pop)](08b-queue-mechanics.md) | Візуалізація push/pop наживо; FIFO через `deque` vs купа |
 | 09 | [Валідація рушія](09-validation.md) | M/G/1 (Pollaczek–Khinchine), M/M/c (Erlang-C) |
-| 11 | [Монте-Карло](11-monte-carlo.md) | 300 прогонів: чесна оцінка прискорення (~5×, не 11×) |
-| 12 | [Чутливість до навантаження](12-load-sensitivity.md) | Sweep ρ: коли Priority критично важливий |
-| 13 | [Метрика шкоди](13-harm-metric.md) | Від хвилин до пацієнто-годин у небезпеці (CTAS) |
-| 14 | [Reneging (LWBS)](14-reneging-lwbs.md) | Пацієнти йдуть не дочекавшись; ефект клапана |
-| 15 | [Динамічна тяжкість](15-dynamic-severity.md) | Погіршення під час очікування і смерть |
+| 10 | [Монте-Карло](10-monte-carlo.md) | 300 прогонів: чесна оцінка прискорення (~5×, не 11×) |
+| 11 | [Чутливість до навантаження](11-load-sensitivity.md) | Sweep ρ: коли Priority критично важливий |
+| 12 | [Метрика шкоди](12-harm-metric.md) | Від хвилин до пацієнто-годин у небезпеці (CTAS) |
+| 13 | [Reneging (LWBS)](13-reneging-lwbs.md) | Пацієнти йдуть не дочекавшись; ефект клапана |
+| 14 | [Динамічна тяжкість](14-dynamic-severity.md) | Погіршення під час очікування і смерть |
 
 ## Відповідність виконуваним скриптам
 
@@ -48,10 +48,10 @@
 |-----------|--------|
 | 06–07 | [`run_main_comparison.py`](../scripts/run_main_comparison.py) |
 | 09 | [`run_validation.py`](../scripts/run_validation.py) |
-| 11 | [`run_monte_carlo.py`](../scripts/run_monte_carlo.py) |
-| 12 | [`run_load_sweep.py`](../scripts/run_load_sweep.py) |
-| 14 | [`run_reneging.py`](../scripts/run_reneging.py) |
-| 15 | [`run_deterioration.py`](../scripts/run_deterioration.py) |
+| 10 | [`run_monte_carlo.py`](../scripts/run_monte_carlo.py) |
+| 11 | [`run_load_sweep.py`](../scripts/run_load_sweep.py) |
+| 13 | [`run_reneging.py`](../scripts/run_reneging.py) |
+| 14 | [`run_deterioration.py`](../scripts/run_deterioration.py) |
 
 Чистий, придатний для імпорту рушій — у пакеті
 [`../src/triage_sim/`](../src/triage_sim). Перевірка еквівалентності всіх його

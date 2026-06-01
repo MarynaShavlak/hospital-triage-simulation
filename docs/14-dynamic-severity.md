@@ -1,8 +1,8 @@
 # Фаза 13. Динамічна тяжкість: погіршення і смерть
 
-> Розділ 15 · [↑ Зміст документації](README.md) · [↑ Головний README](../README.md)
+> Розділ 14 · [↑ Зміст документації](README.md) · [↑ Головний README](../README.md)
 
-[← Фаза 12. Reneging: пацієнти йдуть, не дочекавшись (LWBS)](14-reneging-lwbs.md)  
+[← Фаза 12. Reneging: пацієнти йдуть, не дочекавшись (LWBS)](13-reneging-lwbs.md)  
 
 ---
 
@@ -375,4 +375,4 @@ for rate in rates:
 
 ---
 
-[← Фаза 12. Reneging: пацієнти йдуть, не дочекавшись (LWBS)](14-reneging-lwbs.md)  
+[← Фаза 12. Reneging: пацієнти йдуть, не дочекавшись (LWBS)](13-reneging-lwbs.md)  
