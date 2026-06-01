@@ -251,7 +251,7 @@ aging           1.9%   13.1%          16%
 ```python
 D = {'fifo':'#5c6bc0','priority':'#26a69a','aging':'#ab47bc'}
 discs = ['fifo','priority','aging']; DL = ['FIFO','Priority','Aging']
-# для лівої панелі потрібні і наївні числа (l1 died %): рахуємо з 'arrived_l1_died' з Клітинки 4
+# для лівої панелі потрібні і наївні числа (l1 died %): рахуємо з 'arrived_l1_died'
 naive_l1 = [100*arrived_l1_died[disc]/arrived_l1 for disc in discs]   # наївна модель
 real_l1  = [100*results[disc]['l1_died']/arrived_l1 for disc in discs]      # реалістична
 

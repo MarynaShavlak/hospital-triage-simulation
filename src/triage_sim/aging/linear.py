@@ -52,5 +52,4 @@ def simulate_aging_heap(patients: list[Patient], aging_threshold: int = DEFAULT_
 
 
 # Публічний рушій aging — купна версія (O(log n)); наївний список лишаємо як еталон.
-# (Відповідає рішенню з ноутбука зробити купну версію основною.)
 simulate_aging = simulate_aging_heap

@@ -13,5 +13,5 @@ DISCS = DISCIPLINES
 DISC_COLOR = {"fifo": "#5c6bc0", "priority": "#26a69a", "aging": "#ab47bc"}
 DISC_LABEL = {"fifo": "FIFO", "priority": "Priority", "aging": "Aging"}
 
-# Поріг aging у всіх прогонах графіків (як у ноутбуці).
+# Поріг aging — єдиний для всіх прогонів графіків.
 AGING_THR = 45
